@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sobetskyi maksym</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body onclick="handleBodyClick(event)">
+  <header>
+    <button class="burger" onclick="toggleMenu(event)">☰</button>
+    <div class="logo">sobetskyi maksym</div>
+  </header>
+  <nav id="mobileMenu">
+    <a href="#about" onclick="toggleMenu()">хто я</a>
+    <a href="#skills" onclick="toggleMenu()">скіли</a>
+    <a href="#experience" onclick="toggleMenu()">досвід</a>
+    <a href="#contact" onclick="toggleMenu()">контакти</a>
+  </nav>
+  <main>
+    <section id="about"><h2>Хто я</h2><p>Тут буде короткий опис про себе.</p></section>
+    <section id="skills"><h2>Скіли</h2><p>Мої навички та інструменти.</p></section>
+    <section id="experience"><h2>Досвід</h2><p>Мій професійний шлях.</p></section>
+    <section id="contact"><h2>Контакти</h2><p>Email або форма зворотного зв'язку.</p></section>
+  </main>
+  <footer>
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="social-icon" />
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" class="social-icon" />
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111421.png" alt="Instagram" class="social-icon" />
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
