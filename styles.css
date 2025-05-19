@@ -3,6 +3,7 @@
     --text: #1a1a1a;
     --accent: #6c63ff;
     --muted: #666;
+    --header-height: 64px;
 }
 * {
     box-sizing: border-box;
@@ -37,8 +38,8 @@ header {
     cursor: pointer;
 }
 nav {
-    position: absolute;
-    top: 64px;
+    position: fixed;
+    top: var(--header-height);
     left: 0;
     width: 100%;
     background: #fff;
@@ -57,7 +58,11 @@ nav.show {
     display: flex;
 }
 main section {
-    padding: 4rem 1rem;
+    padding: 1rem;
+    scroll-margin-top: var(--header-height);
+}
+ul {
+    padding-left: 1rem;
 }
 footer {
     padding: 2rem 1rem;
