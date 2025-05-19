@@ -16,6 +16,24 @@ body {
     background-color: var(--bg);
     color: var(--text);
 }
+.gradient {
+    width: 100%;
+    background: linear-gradient(149deg, rgba(24, 187, 156, 1) 0%, rgb(164 122 221) 42%, rgb(223 113 196) 72%, rgb(195 115 220) 100%);
+    animation: gradient 10s infinite linear;
+    background-size: 400%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 80% 0%;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 80% 0%;
+    }
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -63,6 +81,9 @@ main section {
 }
 ul {
     padding-left: 1rem;
+}
+hr {
+    margin: 10px 0;
 }
 footer {
     padding: 2rem 1rem;
